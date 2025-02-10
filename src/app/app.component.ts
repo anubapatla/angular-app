@@ -14,4 +14,7 @@ import { CommonModule } from '@angular/common';
 export class AppComponent {
   title = 'angular 18 tutirioals';
   subtitle='angular tutioals for beginners'
+  todaydate=new Date();
+  salary=10000;
+  _obj={"name":"ANU"};
 }
