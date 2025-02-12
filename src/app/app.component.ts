@@ -4,10 +4,12 @@ import{MatCardModule,} from '@angular/material/card';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './common/about/about.component';
 import { CommonModule } from '@angular/common';
+import { ReversePipe } from './custom/reverse.pipe';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,MatCardModule,HomeComponent,CommonModule],
+  imports: [RouterOutlet,MatCardModule,HomeComponent,FormsModule,CommonModule,ReversePipe],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
@@ -17,4 +19,11 @@ export class AppComponent {
   todaydate=new Date();
   salary=10000;
   _obj={"name":"ANU"};
+  isdisabled=true;
+  Changetitle(){
+    this.title="angular 18 full tutorial"}
+    updatetitle(event:any){
+   this.title=event.target.value;
+    
+  }
 }

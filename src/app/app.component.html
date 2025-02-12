@@ -17,7 +17,15 @@
       <span>{{salary | number:'1.2-2'}}</span>
       <br>
         <span>{{_obj|json}}</span>
-        
+        <span> {{title|reverse}}</span>
+     <input type="checkbox" [checked]="isdisabled">
+     <br>
+     <input [value]="isdisabled">  
+     <br>
+     <!-- <input (keyup)="updatetitle($event)"> -->
+      <input [(ngModel)]="title"/>
+     <br>
+     <button (click)="Changetitle()">Click here</button> 
     </mat-card-actions>
  
   
