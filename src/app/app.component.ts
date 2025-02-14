@@ -6,10 +6,12 @@ import { AboutComponent } from './common/about/about.component';
 import { CommonModule } from '@angular/common';
 import { ReversePipe } from './custom/reverse.pipe';
 import { FormsModule } from '@angular/forms';
+import { AdminModule } from "./admin/admin.module";
+import { DashboardComponent } from "./admin/dashboard/dashboard.component";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,MatCardModule,HomeComponent,FormsModule,CommonModule,ReversePipe],
+  imports: [RouterOutlet, MatCardModule, HomeComponent, FormsModule, CommonModule, ReversePipe, AdminModule, AboutComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
